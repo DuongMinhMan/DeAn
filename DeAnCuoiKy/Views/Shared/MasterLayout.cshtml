@@ -1,0 +1,265 @@
+﻿<style>
+    /* Tổng quan */
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Container chung cho phần header */
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        background-color: #333;
+        color: #fff;
+    }
+
+    /* Logo */
+    .logo {
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    /* Thanh tìm kiếm */
+    .search-bar input {
+        padding: 5px;
+        width: 200px;
+    }
+
+    /* Giỏ hàng và đăng nhập */
+    .cart, .login a {
+        color: white;
+        text-decoration: none;
+        margin-left: 20px;
+    }
+
+        .cart a {
+            color: white;
+            text-decoration: none;
+        }
+    /* Menu điều hướng */
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        background-color: #444;
+    }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+            nav ul li a {
+                color: #fff;
+                text-decoration: none;
+                padding: 10px 20px;
+                display: block;
+            }
+
+    /* Banner */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+    }
+
+    .banner {
+        width: 100%;
+        height: 400px;
+        background-image: url('https://wallpapercave.com/wp/wp7704458.jpg'); /* Replace with shoe store image */
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5); /* Adds a dark overlay for better text readability */
+    }
+
+    .banner-content {
+        position: relative;
+        z-index: 2;
+        color: white;
+        text-align: center;
+    }
+
+        .banner-content h1 {
+            font-size: 48px;
+            margin-bottom: 10px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: white;
+        }
+
+        .banner-content p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+    .cta-button {
+        padding: 15px 30px;
+        background-color: #ff4d4d;
+        color: white;
+        font-size: 16px;
+        text-transform: uppercase;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+        .cta-button:hover {
+            background-color: #ff3333;
+        }
+
+
+    /* Sản phẩm nổi bật */
+    .featured-products {
+        padding: 20px;
+        text-align: center;
+    }
+
+        .featured-products h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+    .product-grid {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .product {
+        border: 1px solid #ddd;
+        padding: 10px;
+        width: 200px;
+        text-align: center;
+    }
+
+        .product img {
+            width: 100%;
+            height: auto;
+        }
+
+        .product h3 {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        .product p {
+            font-size: 16px;
+            color: #333;
+        }
+
+   
+
+    /* Footer */
+    footer {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+    }
+
+        footer .social a {
+            color: #89CFF0;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+</style>
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Giày</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">Sneaker House</div>
+            <div class="search-bar">
+                <input type="text" placeholder="Tìm kiếm sản phẩm...">
+            </div>
+            <div class="cart">
+                <a href="#">Giỏ hàng (0)</a>
+            </div>
+            <div class="login">
+                <a href="http://localhost:50429/Home/Login">Đăng nhập</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Menu điều hướng -->
+    <nav>
+        <ul>
+            <li><a href="#">Trang chủ</a></li>
+            <li><a href="#">Giày nam</a></li>
+            <li><a href="#">Giày nữ</a></li>
+            <li><a href="#">Giày trẻ em</a></li>
+            <li><a href="#">Giảm giá</a></li>
+        </ul>
+    </nav>
+
+    <!-- Banner -->
+    <div class="banner">
+        <div class="overlay"></div>
+        <div class="banner-content">
+            <h1>MUA GIÀY GIÁ RẺ</h1>
+            <p>Bước đi phong cách, khẳng định cá tính</p>
+            <button class="cta-button">Mua ngay</button>
+        </div>
+    </div>
+    <!-- Sản phẩm nổi bật -->
+    <section class="featured-products">
+        <h2>Sản phẩm nổi bật</h2>
+        <div class="product-grid">
+            <div class="product">
+                <img src="https://tec.com.pe/wp-content/uploads/2021/03/https___hypebeast.com_image_2021_03_mschf-lil-nas-x-nike-air-max-97-satan-shoes-human-blood-ink-666-jesus-shoe-am97-release-info-5.jpg" alt="Giày 1">
+                <br />
+                <h3>Giày Thể Thao</h3>
+                <p>1,000,000 VND</p>
+            </div>
+            <div class="product">
+                <img src="https://th.bing.com/th/id/R.a62d2382f66c9f146ac96be7833394fd?rik=7pLq%2bRqLGgqICQ&pid=ImgRaw&r=0" alt="Giày 2">
+                <br />
+                <h3>Giày Công Sở</h3>
+                <p>900,000 VND</p>
+            </div>
+            <!-- Thêm sản phẩm khác -->
+        </div>
+    </section>
+    <br />
+    <div>@RenderBody()</div>
+    <!-- Footer -->
+    <footer>
+        <div class="contact">
+            <p>Địa chỉ:123 đường Sư Vạn Hạnh, TP.HCM</p>
+            <p>Số điện thoại: 0123456789</p>
+        </div>
+        <div class="social">
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+        </div>
+    </footer>
+</body>
+</html>

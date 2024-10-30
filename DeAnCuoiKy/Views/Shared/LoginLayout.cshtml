@@ -1,0 +1,39 @@
+﻿<style type="text/css">
+    /* Footer */
+    footer {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+    }
+
+        footer .social a {
+            color: #89CFF0;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+</style>
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+        
+    <footer>
+        @RenderBody()
+        <br />
+        <br />
+        <div class="contact">
+            <p>Địa chỉ:123 đường Sư Vạn Hạnh, TP.HCM</p>
+            <p>Số điện thoại: 0123456789</p>
+        </div>
+        <div class="social">
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+        </div>
+    </footer>
+</body>
+</html>
